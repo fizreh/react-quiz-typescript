@@ -1,0 +1,51 @@
+import styles from 'styled-components';
+export const Wrapper = styles.div`
+max-width:1100px;
+backgroud: #ebfeff;
+border-radius:10px;
+border:2px solid #0085a3;
+padding:20px;
+box-shadow:0px 5px 10px rgba(0,0,0,0.25);
+text-align : center;
+
+p{
+font-size:1rem;
+}
+
+`
+
+type ButtonWrapperProps = {
+correct: Boolean;
+userClicked:Boolean;
+}
+export const ButtonWrapper = styles.div<ButtonWrapperProps>`
+
+transition : all 0.3s ease;
+:hover{
+    opacity: 0.8;
+
+}
+
+button{
+    cursor: pointer;
+    user-select:none;
+    font-size:0.8rem;
+    color:#fff;
+    border:2px solid #d38558;
+    box-shadow:1px 2px 0px rgba(0,0,0,0.25);
+    border-radius:10px;
+    height:40px;
+    width:100%;
+    margin:5px 0;
+    background: ${({ correct, userClicked }) =>
+    correct
+      ? 'linear-gradient(90deg, #56FFA4, #59BC86)'
+      : !correct && userClicked
+      ? 'linear-gradient(90deg, #FF5656, #C16868)'
+      : 'linear-gradient(90deg, #56ccff, #6eafb4)'};
+border : 3px solid;
+text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+`
