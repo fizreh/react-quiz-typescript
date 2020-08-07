@@ -132,7 +132,6 @@ useEffect(() => {
     <>
       <GlobalStyle/>
       <Wrapper>
-        <h1>REACT QUIZ</h1>
         <label>Select the level</label>
     {"  "}
         <select onChange = {onChangeDifficulty} onSelect = {handleSelectDifficulty} >
