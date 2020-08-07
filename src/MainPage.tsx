@@ -173,7 +173,7 @@ useEffect(() => {
     {!loading && !gameOver && userAnswers.length === number +1 && number !== TOTAL_QUESTIONS-1 ?<button className="next" onClick={nextQuestion}>
       Next Question
     </button> : null}
-    {Winner() && userAnswers.length === TOTAL_QUESTIONS ? <p>Congratulations!! You have a great IQ</p> : !Winner() && userAnswers.length === TOTAL_QUESTIONS ?<p>Please Try again</p>:null}
+          {Winner() && userAnswers.length === TOTAL_QUESTIONS ? <p>Congratulations!! You have a great IQ. You got {percentage}% result.</p> : !Winner() && userAnswers.length === TOTAL_QUESTIONS ?<p>Please Try again. You have got {percentage}% result. </p>:null}
         
         
 
