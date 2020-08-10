@@ -117,19 +117,17 @@ function Winner(){
         
 }
 
-console.log("Winner",Winner());
-console.log("Answers equal",userAnswers.length === TOTAL_QUESTIONS);
-
-
-
 useEffect(() => {
     fetchReq();
   }, []);
 
 //console.log(difficulty,category);
  
-
+if(loading)
+{return <h1>Loading...</h1>}
   return (
+
+   
     <>
       <GlobalStyle/>
       <Wrapper>
