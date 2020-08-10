@@ -7,7 +7,7 @@ Link,
 Routes,
 Route
 } from 'react-router-dom';
-import {GlobalStyle,Wrapper} from './App.styles'
+import {GlobalStyle,Wrapper} from './App.styles';
 
 
 
