@@ -8,7 +8,8 @@ import {Difficulty,fetchCategory} from './API'
 // Styles
 import {GlobalStyle,Wrapper} from './MainPage.styles';
 
-
+const test: string = "";
+console.log(test);
 
 type categoryArray = {
     id: number;
